@@ -1,9 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[IDM(Internet Download Manager)下载器的使用以及破解]]></title>
+    <url>%2Fidm.html</url>
+    <content type="text"><![CDATA[下载地址https://pan.baidu.com/s/1TlRUXjdIQWn9Ifa2MGs2fA，提取码：n5ra安装下载并安装完成后，打开谷歌浏览器-更多工具-扩展程序，勾选idm即可，如下图所示：破解打开上面下载的破解工具，点击patch按钮，找到如下图所示的文件，打开即可配合油猴插件，下载百度云文件便可以全速下载油猴插件安装教程：https://blog.axiao.vip/tampermonkey.htmlOVER！！！]]></content>
+      <tags>
+        <tag>IDM</tag>
+        <tag>Tampermonkey</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[油猴插件(Tampermonkey)以及脚本安装使用教程]]></title>
+    <url>%2Ftampermonkey.html</url>
+    <content type="text"><![CDATA[介绍什么是油猴脚本「油猴」可以通过安装各类脚本对网站进行定制,例如：直接下载百度网盘文件(全速)播放vip视频去掉网页广告github页面汉化还原清新的小说阅读模式…功能太多，具体看你安装的脚本安装方法一油猴插件下载地址：https://pan.baidu.com/s/14Xurz9iVsVgAO0LB62m4nQ，提取码：kzjf1.把油猴的.crx文件改为.rar格式，然后解压2.打开谷歌浏览器-更多工具-扩展程序3.打开开发者模式，点击加载已解压的扩展程序,如下图所示4.选择解压的这个文件夹就安装成功了,但是解压的文件不能删除，得找个地方留好安装方法二vpn安装，教程地址：https://blog.axiao.vip/vpn.html脚本地址https://greasyfork.org/zh-CN/scriptsOVER！！！]]></content>
+      <tags>
+        <tag>Tampermonkey</tag>
+        <tag>vpn</tag>
+        <tag>脚本</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[win10系统重装教程]]></title>
+    <url>%2Fsystem-reinstallation.html</url>
+    <content type="text"><![CDATA[前期准备1.下载原版win10 iso映像文件2.原系统重要文件备份（数据无价）3.8G或以上容量U盘4.微PE工具箱（工具不唯一，请务必使用纯净无捆绑的工具）5.系统激活工具win10企业精简版系统映像下载地址：https://pan.baidu.com/s/1qbGsXWvYep2Ww3kIgX6TOw，提取码：5yytwepe工具箱下载地址：https://pan.baidu.com/s/1l1ZyhOshFZUyr5-FvAFPyw，提取码：o2ul系统激活工具下载地址：https://pan.baidu.com/s/1Rm0l5mlhYLfvFZ_wnlvfeg，提取码：jzff想下载其他版本系统的去如下图网址下载原版：制作U盘PE1.连接一个空U盘2.打开pe制作工具，选择安装方式为“U盘”3.选择好“待写入U盘”，然后点击“立即安装进U盘”，其它默认即可注：制作U盘格式建议选择支持单文件大于4G的exFAT或NTFS4.这样U盘pe便顺利制作完成了（制作成功后U盘可用空间会变小）系统安装1.把系统映像文件放入你的u盘2.在下表查阅你的电脑对应的快捷启动热键，重启电脑时不停按启动热键（一般是F12、ESC），直到出现启动选择界面（重要提醒：选择热键前，确保电脑连接着U盘）3.在弹出的启动界面中选择U盘启动盘4.硬盘分区（不需要分区的可以省略这步）点击分区工具DiskGenius右键硬盘，先删除分区，在进行快速分区5.还原点击CGI备份还原工具如下图选择系统盘和映像文件6.执行7.执行完毕并自动重启进入系统设置OVER！！！]]></content>
+      <tags>
+        <tag>system</tag>
+        <tag>win10</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[vpn翻墙软件以及使用教程]]></title>
+    <url>%2Fvpn.html</url>
+    <content type="text"><![CDATA[软件网盘地址https://pan.baidu.com/s/1PgLmVD9OoDh87nbSwuroFg，提取码：ti1k使用教程1.以谷歌浏览器为例，打开chrome://extensions/。 2.解压下载的文件夹，然后将一整个文件夹拖动至页面中，该翻墙插件就安装完成了，在使用过程中记得你本地的文件夹路径不要进行更改，否则插件将会出现无法使用的情况，所以在一开始就应该放好位置哦。3.使用邮箱申请账号并点击邮箱链接激活。4.浏览器登陆你的账号，并选择使用的国家，如下图所示：5.浏览器打开谷歌应用商店，如下图所示：注：当你开启了vpn之后，你当前页面的所有网络通道都会通过vpn，所以建议使用之后进行关闭OVER！！！]]></content>
+      <tags>
+        <tag>vpn</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[利用伪静态几行代码实现虚拟主机支持多站点]]></title>
+    <url>%2FVirtual-Host.html</url>
+    <content type="text"><![CDATA[开启伪静态功能开通虚拟主机后，在主机管理平台把“伪静态设置”状态设置为“开启”域名解析这里找几个域名作为演示：站点1：host1.axiao.vip站点2：host2.axiao.vip站点3：host3.axiao.vip将3个域名分别绑定到主机，并做CNAME解析到主机新建站点文件夹在主机web目录，分别创建好多个站点文件夹host1、host2、host3上传各个站点文件站点1首页文件/host1/index.html；站点2首页文件/host2/index.html；站点3首页文件/host3/index.html；站点3目录文件/host3/mulu/index.html；站点3目录下内容页文件：/host3/mulu/123.html部署伪静态代码将以下伪静态代码，保存为.htaccess：1234567891011# 将 RewriteEngine 模式打开RewriteEngine On# 伪静态作用于要目录 /RewriteBase /RewriteCond %&#123;HTTP_HOST&#125; ^host1.tanxingcai.com$ [NC]RewriteRule ^$ /host1/RewriteCond %&#123;HTTP_HOST&#125; ^host2.tanxingcai.com$ [NC]RewriteRule ^$ /host2/RewriteCond %&#123;HTTP_HOST&#125; ^host3.tanxingcai.com$ [NC]RewriteRule ^$ /host3/RewriteRule ^mulu/(.*)$ /host3/mulu/$1在主机web目录上传.htaccess文件代码解说1：判断访问的域名RewriteCond %{HTTP_HOST} ^host1.tanxingcai.com$ [NC]代码解说2：根据判断的域名指向访问不同的文件夹或文件。RewriteRule ^$ /host1/OVER！！！]]></content>
+      <categories>
+        <category>虚拟主机</category>
+      </categories>
+      <tags>
+        <tag>虚拟主机</tag>
+        <tag>htaccess</tag>
+        <tag>伪静态</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[测试笔记]]></title>
     <url>%2Ftest.html</url>
-    <content type="text"><![CDATA[私密文章，请输入密码. Incorrect Password! No content to display! U2FsdGVkX187l1XUaLeg/l35hlBy+9XnU+9Es4x6GWSo1qekr4wH23WLXwnlX9M74eer/IRouasOLaKkCGxkUtSfzM4mUR8wRP8pz83R4vbonoXOp3pt4rZkxvVS+hWco3PKMfM1DYJVFcBGYy8vckkhPjXzRdzAYFMv4Q9wVcdN75XVZV+MA1AlkJnzThuK8Je+AEns6M9wHBiyyaqFu1CVDBULhlw0G6Oc0aaNsFqHCHIBtHAaHQ0KrchLpr8rsxL7O8eyfkm8AWyZ+vCZuZLRkOpRy6QGvHLBXxXj0HDn2P0FCRYwqmOpcTIM+8k2BHQQsK2PoBZUCdfcNVt5mPxt4lVE7Y6bQbmkfiYXvV9PI2h1MirhvWODgaXafHIPVKZ1Raz3KXq3yeMwFf55jomtSpFcx9LPMELxSbkcJyT+HntdfX7Qehy/C+6apx3pYTNCXXt6A+DEovPD+VywkZ2/z30BjXbjzldJtf2fUkqkcoWnZSFt9ekisRVR74KXTCmbR8lbhJWTv++Nx7ddOxDt+Ui/vYFMAEy1I488YqlpC+YOLLuwBak3CtyqvophyV6CefJSd5ZgdOYLDnOVlkB8bkcf4fj1LdNUCJ/RrJyoc/WDiaVwjJ9vpNaJCg/EIW3YzFDH3gn8zntcfhu40eX4CngAeDfXSIpLy4P4IhP3mv+5oAQLmqPNnbVdM5/3]]></content>
+    <content type="text"><![CDATA[私密文章，请输入密码. Incorrect Password! No content to display! U2FsdGVkX19YGnKJR0IqpuzGrzU03v/GVrVv2QvbZcKbSuXLMv3IXp4niaZQpId4MNhTCMQpuaqob/kbAn5PTFdLzlQ02ePmmykcyI65lL/V15Vd6c79lksJDVLY8yjyaFJSH66R9nwSI2p2qknNhHaCiD4Jil6R8B+O0SlaI0NhugRDGVYpq4XeBIz8J884gkCx/EDVeYuuTL7IILVSw44qno8MkQaNNZedsMiwRWfJs6qP0FKu4QhXXu798kK2IFho/EDPKT1kXZecDDcuCyCg/1Shjvcpq5S9aC0kLZBd3cccMpo/ApI2AjV7QvrpzIPUNh6pCVF8fw/Uh4xwGekvfL6PrbF6pNYc1NIBb/Uw0ONZJmFK8z/iuWB27t349pOOI6XMfJ4sJLnjIZD/0bkKhCDUSnUE7V7n8vT+f6nldgQDre3kKAMoMApeLltpJfe+qHF0bsH/aigkcL/FabLOU+iawkgDmIkTXseOcbj0sMDzuxtwkezDXRUs2y6TgUlcFu8oR3ytmcdMZJUVLOcG4f6BlYsAs7vfcuMXVD7FjPwA3SazmwWN/KoVyu0yH6oQ8ca/Y8enL+ic/Dgzz5jweaJr0ROjWmpuLdeoZMCEiiUGLqDN6caPLbXJ2wFr1yIeWNoaPT/PwkhkluQc1QQbmDVfRVj64ZXJ4C+P8cAl+UQ95D8qSpUEbPPKksHR]]></content>
       <categories>
         <category>测试笔记</category>
       </categories>
@@ -36,7 +85,7 @@
   <entry>
     <title><![CDATA[hexo博客的安装以及提交托管到github和coding]]></title>
     <url>%2Fhexo-install.html</url>
-    <content type="text"><![CDATA[准备环境1.下载git并安装，网盘链接：https://pan.baidu.com/s/1Xn1ZHTRBv7y0j367rHgMEQ，提取码：r1mh2.下载Nodejs并安装，网盘链接：https://pan.baidu.com/s/11B11zIVoYFDE-jTwK3_RYg，提取码：dnik3.注册github账号，地址：https://github.com/4.注册coding账号，地址：https://dev.tencent.com/user?welcome安装hexo并初始化1.选择一个放置博客的目录，在目录中鼠标右键并点击git bash here2.按步骤输入以下命令：1npm install -g hexo-cli1hexo init1npm install1hexo server本地博客已经搭建好了，打开浏览器输入http://localhost:4000即可访问你的本地博客（命令行按ctrl c关闭本地博客浏览）。提交托管提交到github1.创建仓库， 仓库名为：&lt;Github账号名称&gt;.github.io2.修改_config.yml（在博客目录下）。文件末尾修改为：123456# Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy: type: git repo: git@github.com:&lt;Github账号名称&gt;/&lt;Github账号名称&gt;.github.io.git branch: master3.安装hexo-deployer-git插件,输入以下命令1npm install hexo-deployer-git --save4.添加SSH公钥设置用户名称和邮件地址：12git config --global user.name &quot;username&quot;git config --global user.email &quot;username@example.com&quot;这里的username输入你的GitHub用户名，username@example.com输入你GitHub的邮箱，这样GitHub才能知道你是不是对应它的账户。添加SSH：1ssh-keygen -t rsa -C &quot;你注册github的邮箱地址&quot;然后复制公钥内容（路径C:\Users\Administrator\.ssh\id_rsa.pub）,浏览器打开你的github个人资料，找到SSH keys,点击New SSH key,复制进去添加即可。测试是否添加成功，输入以下命令:12ssh -T git@github.comyes返回“You’ve successfully authenticated”即成功。5.推送博客到github,输入以下命令：12hexo ghexo d6.浏览器访问网址： https://&lt;Github账号名称&gt;.github.io7.绑定自定义域名（没有自己域名的这步可以省略）域名解析：类型选择为 CNAME；主机记录即域名前缀，自己定义；记录值填写为&lt;Github账号名称&gt;.github.io；解析线路，TTL 默认即可。仓库设置：打开博客仓库设置：https://github.com/&lt;Github账号名称&gt;/&lt;Github账号名称&gt;.github.io/settings在GitHub Pages下，Custom domain填入解析的域名，点击save，下面还有个强制https选项，看你自己需求。8.在站点目录的source文件夹下，创建并打开CNAME.txt，写入你的域名（如blog.axiao.vip），保存，并重命名为CNAME，去掉后缀即可。同时提交到coding1.创建仓库， 仓库名为：&lt;Coding账号名称&gt;2.修改_config.yml（在博客目录下）。文件末尾修改为：123456789# Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy:- type: git repo: git@github.com:&lt;Github账号名称&gt;/&lt;Github账号名称&gt;.github.io.git branch: master- type: git repo: git@git.dev.tencent.com:&lt;Coding账号名称&gt;/&lt;Coding账号名称&gt;.git branch: master3.配置SSH公钥鉴于创建Github时，已经生成过公钥。可直接复制密钥文件内容（路径形如C:\Users\Administrator.ssh\id_rsa.pub）， 粘贴到coding新增公钥。 测试是否添加成功，输入以下命令:12ssh -T git@git.coding.netyes返回“你好，你已经通过 SSH 协议认证 Coding.net 服务”即成功。4.推送博客到coding,输入以下命令：12hexo ghexo d5.进入项目里『代码』页面，点击『一键开启静态 Pages』，稍等片刻CodingPages即可部署成功。6.浏览器访问网址： https://&lt;coding账号名称&gt;.coding.me7.绑定自定义域名（没有自己域名的这步可以省略）域名解析：添加 CNAME 记录指向 &lt;Coding账号名称&gt;.coding.me类型选择为 CNAME；主机记录即域名前缀，自己定义；记录值填写为&lt;coding账号名称&gt;.coding.me；解析线路，TTL 默认即可。添加 两条A 记录指向 192.30.252.153和192.30.252.154（这俩都是github的ip）类型选择为 A；主机记录即域名前缀，填写为@；记录值填写为192.30.252.153和192.30.252.154；解析线路，境外或谷歌。仓库设置：进入项目里『代码』页面，在『Pages 服务』设置页（https://dev.tencent.com/u/&lt;Coding账号名称&gt;/p/&lt;Coding账号名称&gt;/git/pages/settings）中绑定自定义域名，下面还有个强制https选项，看你自己需求。（注：https证书申请出现错误时，可以先去域名解析那里关掉境外的解析，再次申请即可）8.重新提交代码到github和coding，命令如下：1hexo clean1hexo g1hexo dOVER！！！]]></content>
+    <content type="text"><![CDATA[准备环境1.下载git并安装，网盘链接：https://pan.baidu.com/s/1bHNo7-B_NMDoJgDhZZtaWw，提取码：swwt2.下载Nodejs并安装，网盘链接：https://pan.baidu.com/s/1uoCAHpwYD8SpxHrUdFfB8g，提取码：yg8c3.注册github账号，地址：https://github.com/4.注册coding账号，地址：https://dev.tencent.com/user?welcome安装hexo并初始化1.选择一个放置博客的目录，在目录中鼠标右键并点击git bash here2.按步骤输入以下命令：注：以下命令如果报&#39;bash:hexo /c/Users/axiao/AppData/Roaming/npm/hexo: No such file or directory&#39;的错误，请添加环境变量&#39;C:\Users\axiao\AppData\Roaming\npm\node_modules\hexo\bin\&#39;环境变量添加教程：https://blog.axiao.vip/git.html1npm install -g hexo-cli1hexo init1npm install1hexo server本地博客已经搭建好了，打开浏览器输入http://localhost:4000即可访问你的本地博客（命令行按ctrl c关闭本地博客浏览）。提交托管提交到github1.创建仓库， 仓库名为：&lt;Github账号名称&gt;.github.io2.修改_config.yml（在博客目录下）。文件末尾修改为：123456# Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy: type: git repo: git@github.com:&lt;Github账号名称&gt;/&lt;Github账号名称&gt;.github.io.git branch: master3.安装hexo-deployer-git插件,输入以下命令1npm install hexo-deployer-git --save4.添加SSH公钥设置用户名称和邮件地址：12git config --global user.name &quot;username&quot;git config --global user.email &quot;username@example.com&quot;这里的username输入你的GitHub用户名，username@example.com输入你GitHub的邮箱，这样GitHub才能知道你是不是对应它的账户。添加SSH：1ssh-keygen -t rsa -C &quot;你注册github的邮箱地址&quot;然后复制公钥内容（路径C:\Users\Administrator\.ssh\id_rsa.pub）,浏览器打开你的github个人资料，找到SSH keys,点击New SSH key,复制进去添加即可。测试是否添加成功，输入以下命令:12ssh -T git@github.comyes返回“You’ve successfully authenticated”即成功。5.推送博客到github,输入以下命令：12hexo ghexo d6.浏览器访问网址： https://&lt;Github账号名称&gt;.github.io7.绑定自定义域名（没有自己域名的这步可以省略）域名解析：类型选择为 CNAME；主机记录即域名前缀，自己定义；记录值填写为&lt;Github账号名称&gt;.github.io；解析线路，TTL 默认即可。仓库设置：打开博客仓库设置：https://github.com/&lt;Github账号名称&gt;/&lt;Github账号名称&gt;.github.io/settings在GitHub Pages下，Custom domain填入解析的域名，点击save，下面还有个强制https选项，看你自己需求。8.在站点目录的source文件夹下，创建并打开CNAME.txt，写入你的域名（如blog.axiao.vip），保存，并重命名为CNAME，去掉后缀即可。同时提交到coding1.创建仓库， 仓库名为：&lt;Coding账号名称&gt;2.修改_config.yml（在博客目录下）。文件末尾修改为：123456789# Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy:- type: git repo: git@github.com:&lt;Github账号名称&gt;/&lt;Github账号名称&gt;.github.io.git branch: master- type: git repo: git@git.dev.tencent.com:&lt;Coding账号名称&gt;/&lt;Coding账号名称&gt;.git branch: master3.配置SSH公钥鉴于创建Github时，已经生成过公钥。可直接复制密钥文件内容（路径形如C:\Users\Administrator.ssh\id_rsa.pub）， 粘贴到coding新增公钥。 测试是否添加成功，输入以下命令:12ssh -T git@git.coding.netyes返回“你好，你已经通过 SSH 协议认证 Coding.net 服务”即成功。4.推送博客到coding,输入以下命令：12hexo ghexo d5.进入项目里『代码』页面，点击『一键开启静态 Pages』，稍等片刻CodingPages即可部署成功。6.浏览器访问网址： https://&lt;coding账号名称&gt;.coding.me7.绑定自定义域名（没有自己域名的这步可以省略）域名解析：添加 CNAME 记录指向 &lt;Coding账号名称&gt;.coding.me类型选择为 CNAME；主机记录即域名前缀，自己定义；记录值填写为&lt;coding账号名称&gt;.coding.me；解析线路，TTL 默认即可。添加 两条A 记录指向 192.30.252.153和192.30.252.154（这俩都是github的ip）类型选择为 A；主机记录即域名前缀，填写为@；记录值填写为192.30.252.153和192.30.252.154；解析线路，境外或谷歌。仓库设置：进入项目里『代码』页面，在『Pages 服务』设置页（https://dev.tencent.com/u/&lt;Coding账号名称&gt;/p/&lt;Coding账号名称&gt;/git/pages/settings）中绑定自定义域名，下面还有个强制https选项，看你自己需求。（注：https证书申请出现错误时，可以先去域名解析那里关掉境外的解析，再次申请即可）8.重新提交代码到github和coding，命令如下：1hexo clean1hexo g1hexo dOVER！！！]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -60,7 +109,7 @@
   <entry>
     <title><![CDATA[git上传代码基本操作]]></title>
     <url>%2Fgit.html</url>
-    <content type="text"><![CDATA[git提交代码的基本使用一.安装1.下载安装网盘链接：https://pan.baidu.com/s/1Xn1ZHTRBv7y0j367rHgMEQ，提取码：r1mh2.配置环境变量右键计算机-属性-高级-环境变量如下图：点击path如下图：点击新建写入git安装的bin目录地址,点击确定即可。3.测试是否安装成功鼠标右键git bash here，输入以下命令查看版本1$ git --version二.克隆远程库1.复制远程仓库地址，例如复制github新建的仓库地址2.克隆在要放置仓库的目录鼠标右键git bash here输入以下命令进行克隆1$ git clone [远程仓库地址]注：要克隆远程仓库必须是你在这个项目中，就是项目所有者（管理员）把你添加进这个项目成员。输入克隆的指令后，如果是第一次使用会提示你输入用户名，和密码。三.创建初始化代码库使用git命令1$ git init注：此步操作完成后，会在此文件夹下生成一个隐藏的.git后缀文件四.提交推送代码1.关联远程库1$ git remote add origin [远程库地址]2.提交本地代码到本地仓库的暂存区1$ git add .3.提交本地代码到本地仓库，并附上提交说明1$ git commit -m &apos;[提交说明]&apos;4.推送到远程库1$ git push origin master注：如果出现错误（可能文件已存在），可以直接用-f（强制推送），命令如下1$ git push -f origin masterOVER！！！]]></content>
+    <content type="text"><![CDATA[git提交代码的基本使用一.安装1.下载安装网盘链接：https://pan.baidu.com/s/1bHNo7-B_NMDoJgDhZZtaWw，提取码：swwt2.配置环境变量右键计算机-属性-高级-环境变量如下图：点击path如下图：点击新建写入git安装的bin目录地址,点击确定即可。3.测试是否安装成功鼠标右键git bash here，输入以下命令查看版本1$ git --version二.克隆远程库1.复制远程仓库地址，例如复制github新建的仓库地址2.克隆在要放置仓库的目录鼠标右键git bash here输入以下命令进行克隆1$ git clone [远程仓库地址]注：要克隆远程仓库必须是你在这个项目中，就是项目所有者（管理员）把你添加进这个项目成员。输入克隆的指令后，如果是第一次使用会提示你输入用户名，和密码。三.创建初始化代码库使用git命令1$ git init注：此步操作完成后，会在此文件夹下生成一个隐藏的.git后缀文件四.提交推送代码1.关联远程库1$ git remote add origin [远程库地址]2.提交本地代码到本地仓库的暂存区1$ git add .3.提交本地代码到本地仓库，并附上提交说明1$ git commit -m &apos;[提交说明]&apos;4.推送到远程库1$ git push origin master注：如果出现错误（可能文件已存在），可以直接用-f（强制推送），命令如下1$ git push -f origin masterOVER！！！]]></content>
       <categories>
         <category>git</category>
       </categories>
@@ -73,7 +122,7 @@
   <entry>
     <title><![CDATA[atom插件安装教程以及推荐]]></title>
     <url>%2Fatom.html</url>
-    <content type="text"><![CDATA[写博客常用的一款markdown编辑器一.首先去官网下载atom软件并安装，请点击官网链接二.安装插件以汉化插件为例进行安装，步骤如下：1.汉化插件的名字为simplified-chinese-menu,则将其放到地址https://atom.io/packages/后面在浏览器打开。2.如下图所示，点击箭头指示的repo，跳转到github进行下载。3.下载完解压到atom的插件目录（一般都在c盘，以用我的为例）C:\Users\axiao\.atom\packages。4.下载nodejs并进行安装，安装完后打开cmd命令窗口，cd到C:\Users\axiao\.atom\packages\atom-simplified-chinese-menu-master这个汉化插件目录，输入命令npm install进行安装即可。三。插件推荐常用插件：1.simplified-chinese-menu(汉化插件)2.file-icons(文件图标美化)3.atom-beautify(代码格式一键美化)4.last-cursor-position(光标自由切换到上一次/下一次编辑位置)5.minimap(代码小地图)6.activate-power-mode(输入时有震撼效果)7.tortoise-svn(svn插件)8.atom-terminal-panel(atom内置命令行工具)9.markdown-preview-plus(markdown预览)10.vim-mode(支持vim模式)11.browser-plus(编辑器内置浏览器 )12.advanced-open-file(快速的打开文件或新建文件，同时支持路径补全)13.quick-highlight(代码高亮)14.platformio-ide-terminal(终端工具 )15.linter(代码校验工具)前端插件:1.emmet(web快速开发必备插件)2.color-picker(在编辑器里面挑选颜色)3.language-JavaScript-jsx(支持JSX语法)4.atom-html-preview(实时预览HTML页面)5.React(react—语法支持)6.atom-minify(css、js代码压缩)7.atom-ternjs(js,nodejs,es6补全，高度定制化)8.jshint(验证js和jsx语法是否正确)9.csslint(验证css语法是否正确)10.autoprefixer(自动为 CSS 属性添加特定的前缀)11.autoclose-html(闭合html标签)12.pigments(颜色显示插件)php插件:1.autocomplete-php(php代码自动补全)2.php-cs-fixer(php语法检查)3.php-debug(php debug)4.php-class-tree(php类文件下函数展示)python插件:1.autocomplete-python(python代码自动补全)2.python-debugger(python debug)3.linter-pep8(python编码规范检查)4.python-tools(跳转插件)以上插件好多在新的atom版本中以自带，可以根据自己需求安装，以下是我现在使用的几款插件和效果图展示，如下图所示：我的安装包和插件包网盘地址：https://pan.baidu.com/s/1PIyxMn2OqUUTmKvS_ttF8w，提取码：vhku设置背景图片快捷键ctrl+shift+eOVER！！！]]></content>
+    <content type="text"><![CDATA[写博客常用的一款markdown编辑器一.首先去官网下载atom软件并安装，请点击官网链接二.安装插件以汉化插件为例进行安装，步骤如下：1.汉化插件的名字为simplified-chinese-menu,则将其放到地址https://atom.io/packages/后面在浏览器打开。2.如下图所示，点击箭头指示的repo，跳转到github进行下载。3.下载完解压到atom的插件目录（一般都在c盘，以用我的为例）C:\Users\axiao\.atom\packages。4.下载nodejs并进行安装，安装完后打开cmd命令窗口，cd到C:\Users\axiao\.atom\packages\atom-simplified-chinese-menu-master这个汉化插件目录，输入命令npm install进行安装即可。三。插件推荐常用插件：1.simplified-chinese-menu(汉化插件)2.file-icons(文件图标美化)3.atom-beautify(代码格式一键美化)4.last-cursor-position(光标自由切换到上一次/下一次编辑位置)5.minimap(代码小地图)6.activate-power-mode(输入时有震撼效果)7.tortoise-svn(svn插件)8.atom-terminal-panel(atom内置命令行工具)9.markdown-preview-plus(markdown预览)10.vim-mode(支持vim模式)11.browser-plus(编辑器内置浏览器 )12.advanced-open-file(快速的打开文件或新建文件，同时支持路径补全)13.quick-highlight(代码高亮)14.platformio-ide-terminal(终端工具 )15.linter(代码校验工具)前端插件:1.emmet(web快速开发必备插件)2.color-picker(在编辑器里面挑选颜色)3.language-JavaScript-jsx(支持JSX语法)4.atom-html-preview(实时预览HTML页面)5.React(react—语法支持)6.atom-minify(css、js代码压缩)7.atom-ternjs(js,nodejs,es6补全，高度定制化)8.jshint(验证js和jsx语法是否正确)9.csslint(验证css语法是否正确)10.autoprefixer(自动为 CSS 属性添加特定的前缀)11.autoclose-html(闭合html标签)12.pigments(颜色显示插件)php插件:1.autocomplete-php(php代码自动补全)2.php-cs-fixer(php语法检查)3.php-debug(php debug)4.php-class-tree(php类文件下函数展示)python插件:1.autocomplete-python(python代码自动补全)2.python-debugger(python debug)3.linter-pep8(python编码规范检查)4.python-tools(跳转插件)以上插件好多在新的atom版本中以自带，可以根据自己需求安装，以下是我现在使用的几款插件和效果图展示，如下图所示：我的安装包和插件包网盘地址：https://pan.baidu.com/s/1oJ53jNP-aRyKRR-uuebCvw，提取码：rj0p设置背景图片快捷键ctrl+shift+eOVER！！！]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -81,6 +130,19 @@
         <tag>atom</tag>
         <tag>Markdown</tag>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo博客搬移到另一台电脑上操作教程]]></title>
+    <url>%2Fhexo-extend-2.html</url>
+    <content type="text"><![CDATA[安装环境git,nodejs下载并安装好.安装Hexo注：以下命令如果报&#39;bash:hexo /c/Users/axiao/AppData/Roaming/npm/hexo: No such file or directory&#39;的错误，请添加环境变量&#39;C:\Users\axiao\AppData\Roaming\npm\node_modules\hexo\bin\&#39;环境变量添加教程：https://blog.axiao.vip/git.html1npm install -g hexo-cli1hexo init源文件拷贝将原来博客内的目录拷贝下来，需要拷贝的有：1._config.yml2.package.json3.scaffolds/4.source/5.themes/安装npm和一些模块12345npm installnpm install hexo-deployer-git --save // 文章部署到 git 的模块（下面为选择安装）npm install hexo-generator-feed --save // 建立 RSS 订阅npm install hexo-generator-sitemap --save // 建立站点地图添加SSH公钥设置用户名称和邮件地址：12git config --global user.name &quot;username&quot;git config --global user.email &quot;username@example.com&quot;这里的username输入你的GitHub用户名，username@example.com输入你GitHub的邮箱，这样GitHub才能知道你是不是对应它的账户。添加SSH：1ssh-keygen -t rsa -C &quot;你注册github的邮箱地址&quot;然后复制公钥内容（路径C:\Users\Administrator\.ssh\id_rsa.pub）,浏览器打开你的github个人资料，找到SSH keys,点击New SSH key,复制进去添加即可。测试是否添加成功，输入以下命令:12ssh -T git@github.comyes返回“You’ve successfully authenticated”即成功。推送博客到github,输入以下命令：12hexo ghexo dOVER！！！]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>coding</tag>
+        <tag>github</tag>
       </tags>
   </entry>
 </search>
