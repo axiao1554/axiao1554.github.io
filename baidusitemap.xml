@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://blog.axiao.vip/system-reinstallation.html</loc>
+    <lastmod>2019-07-01</lastmod>
+  </url>  <url>
     <loc>http://blog.axiao.vip/vpn.html</loc>
+    <lastmod>2019-07-01</lastmod>
+  </url>  <url>
+    <loc>http://blog.axiao.vip/tampermonkey.html</loc>
+    <lastmod>2019-07-01</lastmod>
+  </url>  <url>
+    <loc>http://blog.axiao.vip/markdown.html</loc>
+    <lastmod>2019-07-01</lastmod>
+  </url>  <url>
+    <loc>http://blog.axiao.vip/navicat-1.html</loc>
+    <lastmod>2019-07-01</lastmod>
+  </url>  <url>
+    <loc>http://blog.axiao.vip/flex.html</loc>
+    <lastmod>2019-07-01</lastmod>
+  </url>  <url>
+    <loc>http://blog.axiao.vip/git.html</loc>
+    <lastmod>2019-07-01</lastmod>
+  </url>  <url>
+    <loc>http://blog.axiao.vip/idm.html</loc>
+    <lastmod>2019-07-01</lastmod>
+  </url>  <url>
+    <loc>http://blog.axiao.vip/atom.html</loc>
     <lastmod>2019-07-01</lastmod>
   </url>  <url>
     <loc>http://blog.axiao.vip/Virtual-Host.html</loc>
@@ -13,34 +37,10 @@
     <loc>http://blog.axiao.vip/test.html</loc>
     <lastmod>2019-07-01</lastmod>
   </url>  <url>
-    <loc>http://blog.axiao.vip/tampermonkey.html</loc>
-    <lastmod>2019-07-01</lastmod>
-  </url>  <url>
-    <loc>http://blog.axiao.vip/system-reinstallation.html</loc>
-    <lastmod>2019-07-01</lastmod>
-  </url>  <url>
     <loc>http://blog.axiao.vip/setinterval.html</loc>
     <lastmod>2019-07-01</lastmod>
   </url>  <url>
-    <loc>http://blog.axiao.vip/navicat-1.html</loc>
-    <lastmod>2019-07-01</lastmod>
-  </url>  <url>
-    <loc>http://blog.axiao.vip/markdown.html</loc>
-    <lastmod>2019-07-01</lastmod>
-  </url>  <url>
     <loc>http://blog.axiao.vip/js-get.html</loc>
-    <lastmod>2019-07-01</lastmod>
-  </url>  <url>
-    <loc>http://blog.axiao.vip/idm.html</loc>
-    <lastmod>2019-07-01</lastmod>
-  </url>  <url>
-    <loc>http://blog.axiao.vip/git.html</loc>
-    <lastmod>2019-07-01</lastmod>
-  </url>  <url>
-    <loc>http://blog.axiao.vip/flex.html</loc>
-    <lastmod>2019-07-01</lastmod>
-  </url>  <url>
-    <loc>http://blog.axiao.vip/atom.html</loc>
     <lastmod>2019-07-01</lastmod>
   </url>  <url>
     <loc>http://blog.axiao.vip/hexo-install.html</loc>
