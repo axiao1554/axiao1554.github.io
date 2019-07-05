@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[hexo文章页面美化和内置标签的使用]]></title>
+    <url>%2Fhexo-extend-3.html</url>
+    <content type="text"><![CDATA[注：标签要求 NexT 的版本在 0.4.5 或以上1.此标签将生成一个带上下分割线的引用，同时引用内文本将自动居中。 文本居中时，多行文本若长度不等，视觉上会显得不对称，因此建议在引用单行文本的场景下使用。 例如作为文章开篇引用 或者 结束语之前的总结引用1&#123;% centerquote %&#125;blah blah blah&#123;% endcenterquote %&#125;效果示例:blah blah blah2.当使用此标签引用图片时，图片将自动扩大 26%，并突破文章容器的宽度。 此标签使用于需要突出显示的图片, 图片的扩大与容器的偏差从视觉上提升图片的吸引力1&#123;% fullimage /image-url, alt, title %&#125;效果示例:3.Bootstrap Callout1&#123;% note class_name %&#125; Content (md partial supported) &#123;% endnote %&#125;其中，class_name 可以是以下列表中的一个值：123456defaultprimarysuccessinfowarningdanger效果示例:Content (md partial supported)Content (md partial supported)Content (md partial supported)Content (md partial supported)Content (md partial supported)Content (md partial supported)4.显示文章摘要,此标签以上内容会被显示1&lt;!--more--&gt;]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[网站SEO:百度以及谷歌的快速收录]]></title>
+    <url>%2Fseo.html</url>
+    <content type="text"><![CDATA[seo:优化你的链接最多三层目录结构为最优，越少越好hexo统计1.注册百度统计：https://tongji.baidu.com2.新增网站3.获取代码4.打开hexo主题配置文件，找到baidu_analytics:，复制上图中标记的一串字符放其后面。5.其他网站（非hexo）加入统计代码：复制图中整段代码，请将代码添加到网站全部页面的标签前。百度推送1.进入百度站长页面：http://zhanzhang.baidu.com2.点击站点管理-添加网站，添加时需要验证，上面有三种验证方式（具体那里有介绍）3.推送（主动推送&gt;自动推送&gt;sitemap推送）主动推送hexo安装插件npm install hexo-baidu-url-submit --savehexo根目录的配置文件中新增字段:12345baidu_url_submit: count: 100 # 提交最新的一个链接 host: blog.axiao.vip # 在百度站长平台中注册的域名 token: 8OGYpxowYnhgVsoM # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里! path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里hexo根目录的配置文件中再加入新的deploye12deploy: - type:baidu_url_submitter这样执行hexo deploy的时候，新的链接就会被推送了其他网站（非hexo）主动推送php实例：12345678910111213141516$urls = array( &apos;http://www.example.com/1.html&apos;, &apos;http://www.example.com/2.html&apos;,);$api = &apos;http://data.zz.baidu.com/urls?site=blog.axiao.vip&amp;token=8OGYpxowYnhgVsoM&apos;;$ch = curl_init();$options = array( CURLOPT_URL =&gt; $api, CURLOPT_POST =&gt; true, CURLOPT_RETURNTRANSFER =&gt; true, CURLOPT_POSTFIELDS =&gt; implode(&quot;\n&quot;, $urls), CURLOPT_HTTPHEADER =&gt; array(&apos;Content-Type: text/plain&apos;),);curl_setopt_array($ch, $options);$result = curl_exec($ch);echo $result;自动推送hexo主题配置文件下设置,将baidu_push设置为true其他网站（非hexo）自动推送：1234567891011121314&lt;script&gt;(function()&#123; var bp = document.createElement(&apos;script&apos;); var curProtocol = window.location.protocol.split(&apos;:&apos;)[0]; if (curProtocol === &apos;https&apos;) &#123; bp.src = &apos;https://zz.bdstatic.com/linksubmit/push.js&apos;; &#125; else &#123; bp.src = &apos;http://push.zhanzhang.baidu.com/push.js&apos;; &#125; var s = document.getElementsByTagName(&quot;script&quot;)[0]; s.parentNode.insertBefore(bp, s);&#125;)();&lt;/script&gt;创建名为“baidu_js_push.php”的文件，文件内容是上述自动推送JS代码；在每个PHP模板页文件中的标记后面添加一行代码：&lt;?php include_once(&quot;baidu_js_push.php&quot;) ?&gt;这样在页面被访问时，页面URL将立即被推送给百度sitemaphexo-sitemap推送,安装插件12npm install hexo-generator-sitemap --save npm install hexo-generator-baidu-sitemap --savehexo根目录配置文件中修改url为你的站点地址123456# URL## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;url: https://blog.axiao.viproot: /permalink: :title.htmlpermalink_defaults:在百度站长平台提交sitemap地址（https://blog.axiao.vip/sitemap.xml和https://blog.axiao.vip/baidusitemap.xml）就可以了其他网站（非hexo）sitemap推送：可以使用在线生成sitemap网站，给你的网站生成sitemap（例：https://help.bj.cn/）goole推送注册账号、验证站点、提交sitemap（相当简单）#OVER！！！]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>seo</tag>
+        <tag>sitemap</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[计时器的开启与关闭]]></title>
     <url>%2Fsetinterval.html</url>
     <content type="text"><![CDATA[代码如下123456var carousel = function()&#123; &lt;!-- 计时内容 --&gt; &#125;var timer = setInterval(carousel,10000); //开启计时器clearInterval(timer); //清除计时OVER！！！]]></content>
@@ -10,6 +34,19 @@
       <tags>
         <tag>javascript</tag>
         <tag>setInterval</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[返回顶部|到达底部|锚点用法]]></title>
+    <url>%2Ftop-end.html</url>
+    <content type="text"><![CDATA[返回顶部|到达底部html代码1234&lt;ul class=&quot;fix_bar&quot;&gt; &lt;li class=&quot;layui-icon layui-fixbar-top&quot; id=&quot;to_top&quot; title=&quot;返回顶部&quot;&gt;顶部图标&lt;/li&gt; &lt;li class=&quot;layui-icon layui-fixbar-down&quot; id=&quot;to_bottom&quot; title=&quot;去底部&quot;&gt;底部图标&lt;/li&gt;&lt;/ul&gt;css代码12345678910111213141516171819&lt;style type=&quot;text/css&quot;&gt; .fix_bar&#123; position: fixed; right: 15px; bottom: 15px; z-index: 9999; cursor: pointer; &#125; .layui-fixbar-top&#123; font-size: 35px; background-color: rgba(0,0,0,.3); cursor: pointer; &#125; .layui-fixbar-down&#123; font-size: 35px; background-color: rgba(0,0,0,.3); cursor: pointer; &#125;&lt;/style&gt;jquery代码123456789101112131415161718192021222324//回到顶部 $(&quot;#to_top&quot;).click(function() &#123; $(&quot;html,body&quot;).animate(&#123;scrollTop:0&#125;, 200); &#125;); $(document).scroll(function()&#123; var scroll_top = $(document).scrollTop(); if(scroll_top &gt; 800)&#123; $(&quot;#to_top&quot;).show(); &#125;else&#123; $(&quot;#to_top&quot;).hide(); &#125; &#125;);//到达底部 $(&quot;#to_bottom&quot;).click(function() &#123; $(&quot;html,body&quot;).animate(&#123;scrollTop:document.body.clientHeight + &apos;px&apos;&#125;, 200); &#125;); $(document).scroll(function()&#123; var scroll_top = $(document).scrollTop(); if(scroll_top &lt; 800)&#123; $(&quot;#to_bottom&quot;).show(); &#125;else&#123; $(&quot;#to_bottom&quot;).hide(); &#125; &#125;);三种锚点用法只对a标签有效的方法，设置name属性在chrome浏览器中，会给目标添加上一个浅蓝色边框， 利于寻找123456789101112&lt;body&gt; &lt;a href=&quot;#a&quot;&gt;跳转到指定位置&lt;/a&gt; &lt;ul&gt; &lt;p&gt;练习&lt;/p&gt; &lt;p&gt;练习&lt;/p&gt; &lt;a name=&quot;a&quot; href=&quot;#&quot; style=&quot;text-decoration: none; color: red;&quot;&gt;练习&lt;/a&gt; &lt;!--仅对a标签可以--&gt; &lt;p&gt;练习&lt;/p&gt; &lt;p&gt;练习&lt;/p&gt; &lt;p&gt;练习&lt;/p&gt; &lt;/ul&gt; &lt;/body&gt;通过链接跳转到指定id的位置12345678910&lt;body&gt; &lt;a href=&quot;#a&quot;&gt;跳转到指定位置&lt;/a&gt; &lt;ul&gt; &lt;li&gt;1&lt;/li&gt; &lt;li&gt;1&lt;/li&gt; &lt;li id=&quot;a&quot; style=&quot;color: red;&quot;&gt;2&lt;/li&gt; &lt;li&gt;1&lt;/li&gt; &lt;li&gt;1&lt;/li&gt; &lt;/ul&gt; &lt;/body&gt;利用Element.scrolIIntoView()方法，Element.scrolIIntoView() 方法让当前的元素滚动到浏览器窗口的可视区域内12345678910&lt;body&gt; &lt;ul&gt; &lt;li class=&quot;&quot; onclick=&quot;javascript:document.getElementById(&apos;here&apos;).scrollIntoView()&quot;&gt;寻找红色的here&lt;/li&gt; &lt;li&gt;herr&lt;/li&gt; &lt;li&gt;herr&lt;/li&gt; &lt;li&gt;herr&lt;/li&gt; &lt;li style=&quot;color: red;&quot; id=&quot;here&quot;&gt;herr&lt;/li&gt; &lt;li&gt;herr&lt;/li&gt; &lt;/ul&gt; &lt;/body&gt;OVER！！！]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>html</tag>
+        <tag>css</tag>
+        <tag>javascript</tag>
       </tags>
   </entry>
   <entry>
@@ -38,19 +75,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[返回顶部|到达底部|锚点用法]]></title>
-    <url>%2Ftop-end.html</url>
-    <content type="text"><![CDATA[返回顶部|到达底部html代码1234&lt;ul class=&quot;fix_bar&quot;&gt; &lt;li class=&quot;layui-icon layui-fixbar-top&quot; id=&quot;to_top&quot; title=&quot;返回顶部&quot;&gt;顶部图标&lt;/li&gt; &lt;li class=&quot;layui-icon layui-fixbar-down&quot; id=&quot;to_bottom&quot; title=&quot;去底部&quot;&gt;底部图标&lt;/li&gt;&lt;/ul&gt;css代码12345678910111213141516171819&lt;style type=&quot;text/css&quot;&gt; .fix_bar&#123; position: fixed; right: 15px; bottom: 15px; z-index: 9999; cursor: pointer; &#125; .layui-fixbar-top&#123; font-size: 35px; background-color: rgba(0,0,0,.3); cursor: pointer; &#125; .layui-fixbar-down&#123; font-size: 35px; background-color: rgba(0,0,0,.3); cursor: pointer; &#125;&lt;/style&gt;jquery代码123456789101112131415161718192021222324//回到顶部 $(&quot;#to_top&quot;).click(function() &#123; $(&quot;html,body&quot;).animate(&#123;scrollTop:0&#125;, 200); &#125;); $(document).scroll(function()&#123; var scroll_top = $(document).scrollTop(); if(scroll_top &gt; 800)&#123; $(&quot;#to_top&quot;).show(); &#125;else&#123; $(&quot;#to_top&quot;).hide(); &#125; &#125;);//到达底部 $(&quot;#to_bottom&quot;).click(function() &#123; $(&quot;html,body&quot;).animate(&#123;scrollTop:document.body.clientHeight + &apos;px&apos;&#125;, 200); &#125;); $(document).scroll(function()&#123; var scroll_top = $(document).scrollTop(); if(scroll_top &lt; 800)&#123; $(&quot;#to_bottom&quot;).show(); &#125;else&#123; $(&quot;#to_bottom&quot;).hide(); &#125; &#125;);三种锚点用法只对a标签有效的方法，设置name属性在chrome浏览器中，会给目标添加上一个浅蓝色边框， 利于寻找123456789101112&lt;body&gt; &lt;a href=&quot;#a&quot;&gt;跳转到指定位置&lt;/a&gt; &lt;ul&gt; &lt;p&gt;练习&lt;/p&gt; &lt;p&gt;练习&lt;/p&gt; &lt;a name=&quot;a&quot; href=&quot;#&quot; style=&quot;text-decoration: none; color: red;&quot;&gt;练习&lt;/a&gt; &lt;!--仅对a标签可以--&gt; &lt;p&gt;练习&lt;/p&gt; &lt;p&gt;练习&lt;/p&gt; &lt;p&gt;练习&lt;/p&gt; &lt;/ul&gt; &lt;/body&gt;通过链接跳转到指定id的位置12345678910&lt;body&gt; &lt;a href=&quot;#a&quot;&gt;跳转到指定位置&lt;/a&gt; &lt;ul&gt; &lt;li&gt;1&lt;/li&gt; &lt;li&gt;1&lt;/li&gt; &lt;li id=&quot;a&quot; style=&quot;color: red;&quot;&gt;2&lt;/li&gt; &lt;li&gt;1&lt;/li&gt; &lt;li&gt;1&lt;/li&gt; &lt;/ul&gt; &lt;/body&gt;利用Element.scrolIIntoView()方法，Element.scrolIIntoView() 方法让当前的元素滚动到浏览器窗口的可视区域内12345678910&lt;body&gt; &lt;ul&gt; &lt;li class=&quot;&quot; onclick=&quot;javascript:document.getElementById(&apos;here&apos;).scrollIntoView()&quot;&gt;寻找红色的here&lt;/li&gt; &lt;li&gt;herr&lt;/li&gt; &lt;li&gt;herr&lt;/li&gt; &lt;li&gt;herr&lt;/li&gt; &lt;li style=&quot;color: red;&quot; id=&quot;here&quot;&gt;herr&lt;/li&gt; &lt;li&gt;herr&lt;/li&gt; &lt;/ul&gt; &lt;/body&gt;OVER！！！]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>html</tag>
-        <tag>css</tag>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[IDM(Internet Download Manager)下载器的使用以及破解]]></title>
     <url>%2Fidm.html</url>
     <content type="text"><![CDATA[下载地址https://pan.baidu.com/s/1TlRUXjdIQWn9Ifa2MGs2fA，提取码：n5ra安装下载并安装完成后，打开谷歌浏览器-更多工具-扩展程序，勾选idm即可，如下图所示：破解打开上面下载的破解工具，点击patch按钮，找到如下图所示的文件，打开即可配合油猴插件，下载百度云文件便可以全速下载油猴插件安装教程：https://blog.axiao.vip/tampermonkey.htmlOVER！！！]]></content>
@@ -70,20 +94,20 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[vpn翻墙软件以及使用教程]]></title>
+    <url>%2Fvpn.html</url>
+    <content type="text"><![CDATA[软件网盘地址https://pan.baidu.com/s/1PgLmVD9OoDh87nbSwuroFg，提取码：ti1k使用教程1.以谷歌浏览器为例，打开chrome://extensions/。 2.解压下载的文件夹，然后将一整个文件夹拖动至页面中，该翻墙插件就安装完成了，在使用过程中记得你本地的文件夹路径不要进行更改，否则插件将会出现无法使用的情况，所以在一开始就应该放好位置哦。3.使用邮箱申请账号并点击邮箱链接激活。4.浏览器登陆你的账号，并选择使用的国家，如下图所示：5.浏览器打开谷歌应用商店，如下图所示：注：当你开启了vpn之后，你当前页面的所有网络通道都会通过vpn，所以建议使用之后进行关闭OVER！！！]]></content>
+      <tags>
+        <tag>vpn</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[win10系统重装教程]]></title>
     <url>%2Fsystem-reinstallation.html</url>
     <content type="text"><![CDATA[前期准备1.下载原版win10 iso映像文件2.原系统重要文件备份（数据无价）3.8G或以上容量U盘4.微PE工具箱（工具不唯一，请务必使用纯净无捆绑的工具）5.系统激活工具win10企业精简版系统映像下载地址：https://pan.baidu.com/s/1qbGsXWvYep2Ww3kIgX6TOw，提取码：5yytwepe工具箱下载地址：https://pan.baidu.com/s/1l1ZyhOshFZUyr5-FvAFPyw，提取码：o2ul系统激活工具下载地址：https://pan.baidu.com/s/1Rm0l5mlhYLfvFZ_wnlvfeg，提取码：jzff想下载其他版本系统的去如下图网址下载原版：制作U盘PE1.连接一个空U盘2.打开pe制作工具，选择安装方式为“U盘”3.选择好“待写入U盘”，然后点击“立即安装进U盘”，其它默认即可注：制作U盘格式建议选择支持单文件大于4G的exFAT或NTFS4.这样U盘pe便顺利制作完成了（制作成功后U盘可用空间会变小）系统安装1.把系统映像文件放入你的u盘2.在下表查阅你的电脑对应的快捷启动热键，重启电脑时不停按启动热键（一般是F12、ESC），直到出现启动选择界面（重要提醒：选择热键前，确保电脑连接着U盘）3.在弹出的启动界面中选择U盘启动盘4.硬盘分区（不需要分区的可以省略这步）点击分区工具DiskGenius右键硬盘，先删除分区，在进行快速分区5.还原点击CGI备份还原工具如下图选择系统盘和映像文件6.执行7.执行完毕并自动重启进入系统设置OVER！！！]]></content>
       <tags>
         <tag>system</tag>
         <tag>win10</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[vpn翻墙软件以及使用教程]]></title>
-    <url>%2Fvpn.html</url>
-    <content type="text"><![CDATA[软件网盘地址https://pan.baidu.com/s/1PgLmVD9OoDh87nbSwuroFg，提取码：ti1k使用教程1.以谷歌浏览器为例，打开chrome://extensions/。 2.解压下载的文件夹，然后将一整个文件夹拖动至页面中，该翻墙插件就安装完成了，在使用过程中记得你本地的文件夹路径不要进行更改，否则插件将会出现无法使用的情况，所以在一开始就应该放好位置哦。3.使用邮箱申请账号并点击邮箱链接激活。4.浏览器登陆你的账号，并选择使用的国家，如下图所示：5.浏览器打开谷歌应用商店，如下图所示：注：当你开启了vpn之后，你当前页面的所有网络通道都会通过vpn，所以建议使用之后进行关闭OVER！！！]]></content>
-      <tags>
-        <tag>vpn</tag>
       </tags>
   </entry>
   <entry>
@@ -102,7 +126,7 @@
   <entry>
     <title><![CDATA[测试笔记]]></title>
     <url>%2Ftest.html</url>
-    <content type="text"><![CDATA[私密文章，请输入密码. Incorrect Password! No content to display! U2FsdGVkX19jMbPokGvf4eawFj3Wn4flz/HIK0YCYlMzYy/EIWfT+nPUabkIckCvNM/uPpM7VxaP293fJyxnQuh+3o7O2CSu1g966cRiFpjWbd/5EjTfVO3lvQTI9rvqq9eMKB9/uKmLEnGIGfnuH20X2yIb0rU2wIbbujfvvwqbQhwwWN/Cji+H3y9x9YeYnE0I2eptxINN2p6UeExGH+zl2S2Y/cMs/kChycJT0gisBAlcFy5NrLZ9akqreEkpMQRlLmeg39MMauFzKZCMSgs2P6QrmAAvBLlIzBeR0iHYDm9rnuXjW+YLKNZhjmBqHBYaaY2cOqB120ti259h9IYKf4Sb+gy6vb5idonaVNf/7r4Qj6YDxThqiKSW3EggCi7IvHhBwOTXcvQs6dNs4dxVW6OWdjy7zgvOTFuqaVOEA+PNKhHDq2OWZ96eyJFc1XvNlXa2qxrtS9vBK2WDRtsVsX5TYVYFdTeaRlm+OotyBwei6lpPgsLQlwliJaoGgALG0njAAhvlelPK7EpaBdccVaaESE0E9cNUveScW/wNX2LEkvw3tCqiMAw6AHGFrgZpNDYcqKWjVVgUnD4TF/KWwajIOKVw25fxirOC2M+XGoYwEkfNpPScTKk7WMd4l0jjNUqo7rIdPydyMdUMqORqlkQlX2xkPFeMVhmnd/88ExyDSu9yxyXkFNdxFS4O]]></content>
+    <content type="text"><![CDATA[私密文章，请输入密码. Incorrect Password! No content to display! U2FsdGVkX1+b/ZSDx3TmzENxkODLFVZs3/z9PxdbwhoFj/BgxClnvhDdxM2itxJADc9Yb6+npuijPYioluuO5NwXb4OWGmK/75A8ZBGgIAA7K38BG7XFVjdo6XeTcr81Nf5LB8W3vi5YGGEq8znwwpmRWyD2lEBCv8PsQ9bjcBWXrWRly2ITpIwJymHjCSLe0asSdxdYv3ASnndcOb7cm0MKWdKCflKidJJ0V9yidZDReADl1vFhCwlzy5hIN9hG3qb2CoepNfOLSIZ3CXoT65n28SzxdZMFpplWxJlxcPemm23pmcjSy6BR4AwqjSSi1v7Ya5Cy49endsR0lRNan++HoyrlkUQaoVWYcA6nBOINuSEg0k3mzpavi7U+4qnA7G662e+K5ZZ6Ow42/Yyrnn53CcxrrBzExj7Dxo6D8gsHLQe0czGmn+4ANWmtEAYUltXhb1SU5L81oURTot7xUl+tDuXrcFpIaImY8xjIgTeRgmhlBDDOuzDZetgZXlhYY+gS7WcKM/PCf/R9lVTFBQVkLuRIFOFZol7avIDk8nHoaJcqwK2kPacTikx7rPxxs41c+ivgyo300X7tmhBog6P3WhV93sQLW0zYDPo43aDsgi7TSkihQMphnmgSRwnLaqiUcBDN5S5GAbI0l4WGbBM4sOFrf5V0UphurzyPWTAVDQHqQkafnHg+Xce38x6Z]]></content>
       <categories>
         <category>测试笔记</category>
       </categories>
