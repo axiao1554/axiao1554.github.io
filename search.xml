@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[通过composer安装TP5.1(Thinkphp5.1)]]></title>
+    <url>%2Ftp-install.html</url>
+    <content type="text"><![CDATA[之前使用tp5.0.10上传到服务器上的项目由于tp漏洞被挂木马，首页被篡改，紧急下载tp5.1,官方没有下载地址，只能通过composer进行下载查看你使用的phpstudy版本1.找到此版本的php.exe文件的位置，添加到环境变量2.打开php.ini配置文件：找到extension=php_openssl.dll，去掉前面的;下载并安装composer1.composer中文网http://www.phpcomposer.com/2.下载并安装3.安装完需要用到composer.phar这个文件4.把这个文件复制到你要安装tp的目录5.在此目录上方的路径地址栏输入cmd，打开命令窗口6.输入如下命令下载安装12composer config -g repo.packagist composer https://packagist.phpcomposer.comcomposer create-project topthink/think=5.1.* tp5OVER！！！]]></content>
+      <categories>
+        <category>thinkPHP</category>
+      </categories>
+      <tags>
+        <tag>tp5.1</tag>
+        <tag>composer</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[PHP获取文件后缀名的7种方法]]></title>
     <url>%2Fsuffix.html</url>
     <content type="text"><![CDATA[$file = ‘x.y.z.png’;echo substr(strrchr($file, ‘.’), 1);解析：strrchr($file, ‘.’)strrchr() 函数查找字符串在另一个字符串中最后一次出现的位置，并返回从该位置到字符串结尾的所有字符.$file = ‘x.y.z.png’;echo substr($file, strrpos($file, ‘.’)+1);解析：strrpos($file, ‘.’)查找 “.” 在字符串中最后一次出现的位置,返回位置 substr()从该位置开始截取$file = ‘x.y.z.png’;$arr=explode(‘.’, $file);echo $arr[count($arr)-1];$file = ‘x.y.z.png’;$arr=explode(‘.’, $file);echo end($arr); //end()返回数组的最后一个元素$file = ‘x.y.z.png’;echo strrev(explode(‘.’, strrev($file))[0]);$file = ‘x.y.z.png’;echo pathinfo($file)[‘extension’];解析：pathinfo() 函数以数组的形式返回文件路径的信息。包括以下的数组元素：[dirname][basename][extension]$file = ‘x.y.z.png’;echo pathinfo($file, PATHINFO_EXTENSION);总结：字符串截取2种，数组分割3种，路径函数2种OVER！！！]]></content>
@@ -91,8 +103,8 @@
     <url>%2Fidm.html</url>
     <content type="text"><![CDATA[下载地址https://pan.baidu.com/s/1TlRUXjdIQWn9Ifa2MGs2fA，提取码：n5ra安装下载并安装完成后，打开谷歌浏览器-更多工具-扩展程序，勾选idm即可，如下图所示：破解打开上面下载的破解工具，点击patch按钮，找到如下图所示的文件，打开即可配合油猴插件，下载百度云文件便可以全速下载油猴插件安装教程：https://blog.axiao.vip/tampermonkey.htmlOVER！！！]]></content>
       <tags>
-        <tag>IDM</tag>
         <tag>Tampermonkey</tag>
+        <tag>IDM</tag>
       </tags>
   </entry>
   <entry>
@@ -100,8 +112,8 @@
     <url>%2Ftampermonkey.html</url>
     <content type="text"><![CDATA[介绍什么是油猴脚本「油猴」可以通过安装各类脚本对网站进行定制,例如：直接下载百度网盘文件(全速)播放vip视频去掉网页广告github页面汉化还原清新的小说阅读模式…功能太多，具体看你安装的脚本安装方法一油猴插件下载地址：https://pan.baidu.com/s/14Xurz9iVsVgAO0LB62m4nQ，提取码：kzjf1.把油猴的.crx文件改为.rar格式，然后解压2.打开谷歌浏览器-更多工具-扩展程序3.打开开发者模式，点击加载已解压的扩展程序,如下图所示4.选择解压的这个文件夹就安装成功了,但是解压的文件不能删除，得找个地方留好安装方法二vpn安装，教程地址：https://blog.axiao.vip/vpn.html脚本地址https://greasyfork.org/zh-CN/scriptsOVER！！！]]></content>
       <tags>
-        <tag>Tampermonkey</tag>
         <tag>vpn</tag>
+        <tag>Tampermonkey</tag>
         <tag>脚本</tag>
       </tags>
   </entry>
@@ -125,7 +137,7 @@
   <entry>
     <title><![CDATA[利用伪静态几行代码实现虚拟主机支持多站点]]></title>
     <url>%2FVirtual-Host.html</url>
-    <content type="text"><![CDATA[开启伪静态功能开通虚拟主机后，在主机管理平台把“伪静态设置”状态设置为“开启”域名解析这里找几个域名作为演示：站点1：host1.axiao.vip站点2：host2.axiao.vip站点3：host3.axiao.vip将3个域名分别绑定到主机，并做CNAME解析到主机新建站点文件夹在主机web目录，分别创建好多个站点文件夹host1、host2、host3上传各个站点文件站点1首页文件/host1/index.html；站点2首页文件/host2/index.html；站点3首页文件/host3/index.html；站点3目录文件/host3/mulu/index.html；站点3目录下内容页文件：/host3/mulu/123.html部署伪静态代码将以下伪静态代码，保存为.htaccess：1234567891011# 将 RewriteEngine 模式打开RewriteEngine On# 伪静态作用于要目录 /RewriteBase /RewriteCond %&#123;HTTP_HOST&#125; ^host1.tanxingcai.com$ [NC]RewriteRule ^$ /host1/RewriteCond %&#123;HTTP_HOST&#125; ^host2.tanxingcai.com$ [NC]RewriteRule ^$ /host2/RewriteCond %&#123;HTTP_HOST&#125; ^host3.tanxingcai.com$ [NC]RewriteRule ^$ /host3/RewriteRule ^mulu/(.*)$ /host3/mulu/$1在主机web目录上传.htaccess文件代码解说1：判断访问的域名RewriteCond %{HTTP_HOST} ^host1.tanxingcai.com$ [NC]代码解说2：根据判断的域名指向访问不同的文件夹或文件。RewriteRule ^$ /host1/OVER！！！]]></content>
+    <content type="text"><![CDATA[开启伪静态功能开通虚拟主机后，在主机管理平台把“伪静态设置”状态设置为“开启”域名解析这里找几个域名作为演示：站点1：host1.axiao.vip站点2：host2.axiao.vip站点3：host3.axiao.vip将3个域名分别绑定到主机，并做CNAME解析到主机新建站点文件夹在主机web目录，分别创建好多个站点文件夹host1、host2、host3上传各个站点文件站点1首页文件/host1/index.html；站点2首页文件/host2/index.html；站点3首页文件/host3/index.html；部署伪静态代码将以下伪静态代码，保存为.htaccess：123456789&lt;IfModule mod_rewrite.c&gt; RewriteEngine On RewriteBase / # 绑定host1.axiao.vip到子目录idc RewriteCond %&#123;HTTP_HOST&#125; ^host1.axiao.vip$ [NC] RewriteCond %&#123;REQUEST_URI&#125; !^/host1/ RewriteRule ^(.*)$ host1/$1 [L,QSA] #可以绑定多个, 只需重复上三行代码并更改一下域名、目录名 就OK了&lt;/IfModule&gt;在主机web目录上传.htaccess文件代码解说1：判断访问的域名RewriteCond %{HTTP_HOST} ^host1.tanxingcai.com$ [NC]代码解说2：根据判断的域名指向访问不同的文件夹或文件。RewriteRule ^$ /host1/强制跳转https景安虚拟为例，把自己的ssl证书三个文件上传到web根目录，开启一键ssl就ok了，然后删除证书host1如果放置的是tp框架,那么host1文件夹中.htaccess文件代码如下：12345678910&lt;IfModule mod_rewrite.c&gt;Options +FollowSymlinks -MultiviewsRewriteEngine onRewriteCond %&#123;REQUEST_FILENAME&#125; !-dRewriteCond %&#123;REQUEST_FILENAME&#125; !-fRewriteRule ^(.*)$ index.php?s=$1 [QSA,PT,L]RewriteEngine OnRewriteCond %&#123;SERVER_PORT&#125; 80RewriteRule ^(.*)$ https://%&#123;SERVER_NAME&#125;/$1 [R,L]&lt;/IfModule&gt;OVER！！！]]></content>
       <categories>
         <category>虚拟主机</category>
       </categories>
@@ -138,7 +150,7 @@
   <entry>
     <title><![CDATA[测试笔记]]></title>
     <url>%2Ftest.html</url>
-    <content type="text"><![CDATA[私密文章，请输入密码. Incorrect Password! No content to display! U2FsdGVkX19rihVqqRZcApB/htWquCzp0A/b33BUBq8OgY9L/Kg08X75/m6uRJMgeZrMDfcpbHt/Qf6VYZsmV802zT8VniXY8a5dN1xbuJJ7bg+2h3/+FNdXq69VHPP2W71ppMTsNnPQjpO4zNxuoZ7Ya7Ow/eVjjPMQLRjBpazKO0bBy2lmVFj9dqketaAgGzuZWYuIJRwhq31zscPkh5EwZIRq7ruCL2SJK2Wn23y8gnoAuv9QTQJ6hga/S5NclSTaOHvrvc6ADUWGeWFcuQa8fAF82dkHzCTy23XlsZBU0YwAqqeOgh+vlf8yMi8gvFEtCGjimnbN/zkFo6MP3inSOmF8B8K089mC++4ZwpamLFneu8F1AVeiqz2eAXkbjPuIkYcyJeRx18uJWLlF4Swr4643oZeJVk0C/Jd7UVz+MJVGOkJd6TsGJuMPSkY5LgE+vX/X1h3RLZTKUAx36M6Jhq3OxoI7cb+3mgc3Jg0X1rNj7nZ6zArPbiUwm6bhr6jVmZvhWRiZdiyDOf+ibKSGtuwEaU23fIQ/83nHuRxvuvykt7Nbyl8qZxAE5dflHFcKbN0bABQ3cPfrRiltdefKTjiIJKQQY5nlcg1clOwGST1I3hI+H4oxuFxJogicNcS7i81xb6wwxWbQ3B1ByrXcKN5K7T3+SRZvM02+CDYWScoKlnF4KLKf1CjcYGMO]]></content>
+    <content type="text"><![CDATA[私密文章，请输入密码. Incorrect Password! No content to display! U2FsdGVkX1/AIk3/xbU8BIH+ZEWxHXeenmZElkp6wFc9b2xg5DHp/G7lCuCpKNf1gBlf62ktdyMQaQ9mr5iVrzRgcrzoAXQJ0KW4EGdcOcGY7tKko3JvOJZtAMwYe0YHWjDP6Feiyidp+iqLPzVqNhft+oVGH4Zx6l6plw1irY6qB9UxRMxHRN5Kj5UeaEg0VZnvM8Btv/V519Nc4lXZXavcBJeXrMIrh4o5FExQPShyIOHQxtUX4lx6Bm8dTf8qP/qwMcO7M1JOOsKX/48EJt2UyI9HGjfn+9CpwIZP69/qTQIZYq6lQ/q6b9hAr8qWbGPE2dpCLSRHfeDbnLH8JTcHCVxOrf2ABGBUFNgU13V4WsXR4T/jt/tVzY7e978wE7FcZDx8FROfRpnbhPD9YyIsAMwdvDaYhh3HERc4dza88hA7wgaqvsO19FtwTWqGt0+em1gARDSCzo5cwAhi9vB24GKk6x45xnvWRp1oT7C9j+ATNgkmmxKGqZJ4LugNPN+E9LTPAMt7YjJb1RkLX/w24V/ST1xnU61cikCw9fdXzhPOC/k+akE017dt/uIXoD2SnmTZXMoJqWvXUtqUEOO/UeX0ZRWhycF2cxedTXtn1kakVsizIpJuajxCFkDHlnfKtOQNQDtwUNtKLVqT+tiPny7yAe+MyKg50hEtGcrlGFSiu+bKQJhwY4juCnvx]]></content>
       <categories>
         <category>测试笔记</category>
       </categories>
