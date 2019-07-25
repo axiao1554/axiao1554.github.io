@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[在线电视直播源简单制作]]></title>
+    <url>%2Ftv.html</url>
+    <content type="text"><![CDATA[需要用到的软件有：1.谷歌浏览器2.猫爪插件，提取码：tx4b3.电视直播源列表制作软件，提取码：32634.potplay播放器，提取码：0wxw使用方法：1.首先从网上找几个在线直播播放电视的网站 ，我这边有常用的几个，推荐给大家，至于稳定不稳定，看人品了http://www.radio366.comhttp://www.tvyan.com/http://tvvtvv.com/2.打开直播的网站，随便找一个喜欢的电视台播放，当正常播放的时候，猫爪就会显示抓到的资源数，单击猫爪图标发现里面有好多资源列表，但是里面只有一个是我们需要的直播源，就是后缀带有m3u8的就可以。复制一下即可3.当我们抓到多个电视直播源的时候，我们需要创建一个文本文件，把需要的直播源都放在这个文本文件里面，格式是 “电视名称,电视直播源”注意，中间有个逗号，而且逗号为英文状态。4.使用telelist软件转换，转换好后，桌面就会显示一个以DPL后缀的格式如下图：5.最后我们就要测试这些直播源的有效性，用potplay来播放。OVER！！！]]></content>
+      <tags>
+        <tag>tv</tag>
+        <tag>m3u8</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[通过composer安装TP5.1(Thinkphp5.1)]]></title>
     <url>%2Ftp-install.html</url>
     <content type="text"><![CDATA[之前使用tp5.0.10上传到服务器上的项目由于tp漏洞被挂木马，首页被篡改，紧急下载tp5.1,官方没有下载地址，只能通过composer进行下载查看你使用的phpstudy版本1.找到此版本的php.exe文件的位置，添加到环境变量2.打开php.ini配置文件：找到extension=php_openssl.dll，去掉前面的;下载并安装composer1.composer中文网http://www.phpcomposer.com/2.下载并安装3.安装完需要用到composer.phar这个文件4.把这个文件复制到你要安装tp的目录5.在此目录上方的路径地址栏输入cmd，打开命令窗口6.输入如下命令下载安装12composer config -g repo.packagist composer https://packagist.phpcomposer.comcomposer create-project topthink/think=5.1.* tp5OVER！！！]]></content>
@@ -61,18 +70,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[js获取get参数的一段代码]]></title>
-    <url>%2Fjs-get.html</url>
-    <content type="text"><![CDATA[代码如下123456789101112function _GET(name,isurl) &#123; isurl=isurl || false; var word=&quot;(^|&amp;)&quot; + name + &quot;=([^&amp;]*)(&amp;|$)&quot;; if(isurl)&#123;word=&quot;(^|&amp;)&quot; + name + &quot;=(.*?)$&quot;;&#125; var reg = new RegExp(word, &quot;i&quot;); var r = window.location.search.substr(1).match(reg); if (r !== null) &#123; return decodeURI(r[2]); &#125;; return &quot;&quot;; &#125;var src = decodeURIComponent(_GET(&quot;url&quot;),true);OVER！！！]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>javascript</tag>
-        <tag>get</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[返回顶部|到达底部|锚点用法]]></title>
     <url>%2Ftop-end.html</url>
     <content type="text"><![CDATA[返回顶部|到达底部html代码1234&lt;ul class=&quot;fix_bar&quot;&gt; &lt;li class=&quot;layui-icon layui-fixbar-top&quot; id=&quot;to_top&quot; title=&quot;返回顶部&quot;&gt;顶部图标&lt;/li&gt; &lt;li class=&quot;layui-icon layui-fixbar-down&quot; id=&quot;to_bottom&quot; title=&quot;去底部&quot;&gt;底部图标&lt;/li&gt;&lt;/ul&gt;css代码12345678910111213141516171819&lt;style type=&quot;text/css&quot;&gt; .fix_bar&#123; position: fixed; right: 15px; bottom: 15px; z-index: 9999; cursor: pointer; &#125; .layui-fixbar-top&#123; font-size: 35px; background-color: rgba(0,0,0,.3); cursor: pointer; &#125; .layui-fixbar-down&#123; font-size: 35px; background-color: rgba(0,0,0,.3); cursor: pointer; &#125;&lt;/style&gt;jquery代码123456789101112131415161718192021222324//回到顶部 $(&quot;#to_top&quot;).click(function() &#123; $(&quot;html,body&quot;).animate(&#123;scrollTop:0&#125;, 200); &#125;); $(document).scroll(function()&#123; var scroll_top = $(document).scrollTop(); if(scroll_top &gt; 800)&#123; $(&quot;#to_top&quot;).show(); &#125;else&#123; $(&quot;#to_top&quot;).hide(); &#125; &#125;);//到达底部 $(&quot;#to_bottom&quot;).click(function() &#123; $(&quot;html,body&quot;).animate(&#123;scrollTop:document.body.clientHeight + &apos;px&apos;&#125;, 200); &#125;); $(document).scroll(function()&#123; var scroll_top = $(document).scrollTop(); if(scroll_top &lt; 800)&#123; $(&quot;#to_bottom&quot;).show(); &#125;else&#123; $(&quot;#to_bottom&quot;).hide(); &#125; &#125;);三种锚点用法只对a标签有效的方法，设置name属性在chrome浏览器中，会给目标添加上一个浅蓝色边框， 利于寻找123456789101112&lt;body&gt; &lt;a href=&quot;#a&quot;&gt;跳转到指定位置&lt;/a&gt; &lt;ul&gt; &lt;p&gt;练习&lt;/p&gt; &lt;p&gt;练习&lt;/p&gt; &lt;a name=&quot;a&quot; href=&quot;#&quot; style=&quot;text-decoration: none; color: red;&quot;&gt;练习&lt;/a&gt; &lt;!--仅对a标签可以--&gt; &lt;p&gt;练习&lt;/p&gt; &lt;p&gt;练习&lt;/p&gt; &lt;p&gt;练习&lt;/p&gt; &lt;/ul&gt; &lt;/body&gt;通过链接跳转到指定id的位置12345678910&lt;body&gt; &lt;a href=&quot;#a&quot;&gt;跳转到指定位置&lt;/a&gt; &lt;ul&gt; &lt;li&gt;1&lt;/li&gt; &lt;li&gt;1&lt;/li&gt; &lt;li id=&quot;a&quot; style=&quot;color: red;&quot;&gt;2&lt;/li&gt; &lt;li&gt;1&lt;/li&gt; &lt;li&gt;1&lt;/li&gt; &lt;/ul&gt; &lt;/body&gt;利用Element.scrolIIntoView()方法，Element.scrolIIntoView() 方法让当前的元素滚动到浏览器窗口的可视区域内12345678910&lt;body&gt; &lt;ul&gt; &lt;li class=&quot;&quot; onclick=&quot;javascript:document.getElementById(&apos;here&apos;).scrollIntoView()&quot;&gt;寻找红色的here&lt;/li&gt; &lt;li&gt;herr&lt;/li&gt; &lt;li&gt;herr&lt;/li&gt; &lt;li&gt;herr&lt;/li&gt; &lt;li style=&quot;color: red;&quot; id=&quot;here&quot;&gt;herr&lt;/li&gt; &lt;li&gt;herr&lt;/li&gt; &lt;/ul&gt; &lt;/body&gt;OVER！！！]]></content>
@@ -83,6 +80,18 @@
         <tag>html</tag>
         <tag>css</tag>
         <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[js获取get参数的一段代码]]></title>
+    <url>%2Fjs-get.html</url>
+    <content type="text"><![CDATA[代码如下123456789101112function _GET(name,isurl) &#123; isurl=isurl || false; var word=&quot;(^|&amp;)&quot; + name + &quot;=([^&amp;]*)(&amp;|$)&quot;; if(isurl)&#123;word=&quot;(^|&amp;)&quot; + name + &quot;=(.*?)$&quot;;&#125; var reg = new RegExp(word, &quot;i&quot;); var r = window.location.search.substr(1).match(reg); if (r !== null) &#123; return decodeURI(r[2]); &#125;; return &quot;&quot;; &#125;var src = decodeURIComponent(_GET(&quot;url&quot;),true);OVER！！！]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>javascript</tag>
+        <tag>get</tag>
       </tags>
   </entry>
   <entry>
@@ -118,20 +127,20 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[vpn翻墙软件以及使用教程]]></title>
-    <url>%2Fvpn.html</url>
-    <content type="text"><![CDATA[软件网盘地址https://pan.baidu.com/s/1PgLmVD9OoDh87nbSwuroFg，提取码：ti1k使用教程1.以谷歌浏览器为例，打开chrome://extensions/。 2.解压下载的文件夹，然后将一整个文件夹拖动至页面中，该翻墙插件就安装完成了，在使用过程中记得你本地的文件夹路径不要进行更改，否则插件将会出现无法使用的情况，所以在一开始就应该放好位置哦。3.使用邮箱申请账号并点击邮箱链接激活。4.浏览器登陆你的账号，并选择使用的国家，如下图所示：5.浏览器打开谷歌应用商店，如下图所示：注：当你开启了vpn之后，你当前页面的所有网络通道都会通过vpn，所以建议使用之后进行关闭OVER！！！]]></content>
-      <tags>
-        <tag>vpn</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[win10系统重装教程]]></title>
     <url>%2Fsystem-reinstallation.html</url>
     <content type="text"><![CDATA[前期准备1.下载原版win10 iso映像文件2.原系统重要文件备份（数据无价）3.8G或以上容量U盘4.微PE工具箱（工具不唯一，请务必使用纯净无捆绑的工具）5.系统激活工具win10企业精简版系统映像下载地址：https://pan.baidu.com/s/1qbGsXWvYep2Ww3kIgX6TOw，提取码：5yytwepe工具箱下载地址：https://pan.baidu.com/s/1l1ZyhOshFZUyr5-FvAFPyw，提取码：o2ul系统激活工具下载地址：https://pan.baidu.com/s/1Rm0l5mlhYLfvFZ_wnlvfeg，提取码：jzff想下载其他版本系统的去如下图网址下载原版：制作U盘PE1.连接一个空U盘2.打开pe制作工具，选择安装方式为“U盘”3.选择好“待写入U盘”，然后点击“立即安装进U盘”，其它默认即可注：制作U盘格式建议选择支持单文件大于4G的exFAT或NTFS4.这样U盘pe便顺利制作完成了（制作成功后U盘可用空间会变小）系统安装1.把系统映像文件放入你的u盘2.在下表查阅你的电脑对应的快捷启动热键，重启电脑时不停按启动热键（一般是F12、ESC），直到出现启动选择界面（重要提醒：选择热键前，确保电脑连接着U盘）3.在弹出的启动界面中选择U盘启动盘4.硬盘分区（不需要分区的可以省略这步）点击分区工具DiskGenius右键硬盘，先删除分区，在进行快速分区5.还原点击CGI备份还原工具如下图选择系统盘和映像文件6.执行7.执行完毕并自动重启进入系统设置OVER！！！]]></content>
       <tags>
         <tag>system</tag>
         <tag>win10</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[vpn翻墙软件以及使用教程]]></title>
+    <url>%2Fvpn.html</url>
+    <content type="text"><![CDATA[软件网盘地址https://pan.baidu.com/s/1PgLmVD9OoDh87nbSwuroFg，提取码：ti1k使用教程1.以谷歌浏览器为例，打开chrome://extensions/。 2.解压下载的文件夹，然后将一整个文件夹拖动至页面中，该翻墙插件就安装完成了，在使用过程中记得你本地的文件夹路径不要进行更改，否则插件将会出现无法使用的情况，所以在一开始就应该放好位置哦。3.使用邮箱申请账号并点击邮箱链接激活。4.浏览器登陆你的账号，并选择使用的国家，如下图所示：5.浏览器打开谷歌应用商店，如下图所示：注：当你开启了vpn之后，你当前页面的所有网络通道都会通过vpn，所以建议使用之后进行关闭OVER！！！]]></content>
+      <tags>
+        <tag>vpn</tag>
       </tags>
   </entry>
   <entry>
@@ -150,7 +159,7 @@
   <entry>
     <title><![CDATA[测试笔记]]></title>
     <url>%2Ftest.html</url>
-    <content type="text"><![CDATA[私密文章，请输入密码. Incorrect Password! No content to display! U2FsdGVkX1/KoyF2j7Ehslz+xQjAhagKKFaC28YWDd7Jx+zVNP4g0gKIdoCnt0URY+FoVhRc6qOUny8OOx7immvBZwH8ZAwv6kPrwldpEjRpa/ERRpC8OopEWnAl4yeHvvSJGmCpjjSlasmSAagcGcMJjWo2eUohnJ5Pq6w+nFetg1tgAe0/VMSHRGSgpgu7Pm4LQlVr6VrY39rruOqed4IJ/zt7Zqe6LslmIZWiXQBApU/kzao4lmFNTkcuMxL04rG0oPYVdSsPrlkQvYrzI15pfQKmbjEVo1n1hRjGmmOVG3MG96Zz6qacgfjsTql4tNGVnaYFxgOxPpAq8NTUaIyR61JTSWTTKytz6ObzL3bofEzVaHoRusapn6MdUuqk/4FLzy0n+XKhJEzN6nbt0KWy5FGhDHX5Sh08V43b2+nPStEFxXZNxFWKNxTjO7LdVi4XcRMVBr0ijpI2qm20ZEyKASJEWV5c5goJREz96C7DELzuLJBqBPEdEqWyxIvhBriXC7WoSY1YsBglIvWYvIWcTaPib/UszGrq044p7oiGk7j6KWDEwwbZLE+K1jM64UW9o6YuhLzydVx3XRDoeKZDnf2rxOYK4fOb985lK567WNxisonZxUpInJzKIyAiTYKeFLx4lpK2WbqnfFNxhrfH11C2yRxBmgE5rZ0B1Tki+lF+qQe9bxS3dVlmgmgN]]></content>
+    <content type="text"><![CDATA[私密文章，请输入密码. Incorrect Password! No content to display! U2FsdGVkX19rsaxXTi3aQKWlhrQrSyq3w8BaJ7rn+DpUiyzIBxrs6yPCK9hwbMwsGDyu//YBXV5L3NdcUq7yqtyWGJT50pUnO4tGZBMZMTnyg+XCy6TOLyi1Dun9Mi/2X+htMKFBqduuSu7ub2esPV8DJTEQfTr4C2C3a+CMud6GJRmmTD3B7qJTK3R3kSiuU7bX5kSam1xWs6oxNdwViIeuDDXQjwU7yRthakbEsCvAg3UkSYehyIqCVjo3j46JgU9dPGJNgyWZ4hpMVuB8g+0+4jY2X08uaJsKn/g8gxLrklX91JS1VhMkWGtF//kb6cqibzbEpWn1jhKr+5oQV+Uu103nDrNfb7dR2M5n278iQJIHfWt1Wt4ayFPPp5yHqTCcI20TW6jdxxY9hNPtZuO9ZwNo0NN8lKHhuRFveM+F7cECbxgaIS7C1dw7/jEI+uq1eB+5ofCom4tn95tldRiWqgo7ro/H4Rftiyb5DZDYVGrvRTDtT3sMRX9zReCR2gyod0HdmXhgW31d4t6h+cpkJYqh0mhiELQE4SF5UG/8+vWx2moxKuDeyEMmrKVQjzr3K+cq0gSEoUk/E8s/RFWSw+aCpNpOdxWv1BTQnpyzD/0eTZeG0QrbqvTxKxFPlarXHYjFdQzj1TAmyS9PzFXVTJ45tbu95Le8dPUeUS7X9X8okcc4fdD/jESyPKeL]]></content>
       <categories>
         <category>测试笔记</category>
       </categories>
